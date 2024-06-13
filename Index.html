@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"> <!-- Enlace al archivo CSS externo -->
+    <script src="app.js" rel="text/javascript" defer></script> <!-- Enlace al archivo de script externo -->
+    <title>Cifrador Cesar</title>
+</head>
+
+<body>
+    <main>
+        <h1>Cifrador Cesar.</h1> <!-- Título principal de la página -->
+        <form id="cifrador" autocomplete="off">
+            <!-- Formulario principal con ID 'cifrador' y desactiva el autocompletar -->
+            <input id="input-original" spellcheck="=false" placeholder="ingrese el texto" type="text" name="text">
+            <!-- Input para ingresar el texto original -->
+        </form>
+        <div id="resultado"></div> <!-- Div donde se mostrará el resultado del cifrado -->
+        <div class="rango"> <!-- Div que contiene el control de rango -->
+            <input id="rango" type="range" value="10" min="1" max="20"
+                oninput="this.nextElementSibling.value= this.value">
+            <!-- Control de rango para seleccionar el valor de desplazamiento -->
+            <output>10</output> <!-- Muestra el valor actual seleccionado en el control de rango -->
+        </div>
+    </main>
+</body>
+
+</html>

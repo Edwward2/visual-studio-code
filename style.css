@@ -1,0 +1,97 @@
+/* Importa la fuente 'Source Code Pro' de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro');
+
+/* Variables CSS */
+:root {
+    --color-terminal: #292b36; /* Color de fondo del terminal */
+    --border-radius: 4px; /* Radio de borde para los elementos */
+}
+
+/* Estilo global para todos los elementos */
+* {
+    font-family: 'Source Code Pro', monospace; /* Fuente para todos los elementos */
+}
+
+/* Estilos del cuerpo del documento */
+body {
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color: rgb(171, 116, 226); /* Color de fondo del cuerpo */
+    color: aliceblue; /* Color de texto */
+}
+
+/* Estilos para input y botones */
+input,
+button {
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno al enfocar */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 25px; /* Relleno interno */
+    box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75%); /* Sombra */
+    border-radius: var(--border-radius); /* Radio de borde */
+}
+
+/* Estilos para el título */
+h1 {
+    margin: 0; /* Sin margen */
+}
+
+/* Estilos para el input original y el resultado */
+#input-original,
+#resultado {
+    background-color: var(--color-terminal); /* Color de fondo */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos para el input original */
+#input-original {
+    margin: 20px 0 0; /* Margen superior */
+    padding: 10px; /* Relleno interno */
+    color: wheat; /* Color del texto */
+    border-top-left-radius: var(--border-radius); /* Radio de borde superior izquierdo */
+    border-top-right-radius: var(--border-radius); /* Radio de borde superior derecho */
+}
+
+/* Estilos para el resultado */
+#resultado {
+    height: 20px; /* Altura fija */
+    color: aquamarine; /* Color del texto */
+    padding: 0 10px 10px; /* Relleno interno */
+    border-bottom-left-radius: var(--border-radius); /* Radio de borde inferior izquierdo */
+    border-bottom-right-radius: var(--border-radius); /* Radio de borde inferior derecho */
+}
+
+/* Estilos para el control de rango */
+.rango {
+    margin-top: 10px; /* Margen superior */
+    display: grid; /* Usa grid para el diseño */
+    text-align: center; /* Alineación de texto */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Estilos para el input de tipo rango */
+input[type='range'] {
+    -webkit-appearance: none; /* Quita la apariencia predeterminada de WebKit */
+    appearance: none; /* Quita la apariencia predeterminada */
+    border-radius: var(--border-radius); /* Radio de borde */
+    background-color: var(--color-terminal); /* Color de fondo */
+    margin: 0; /* Sin margen */
+    padding: 0 5px; /* Relleno interno */
+    height: 20px; /* Altura */
+}
+
+/* Estilos para el pulgar del input de tipo rango */
+input[type='range']::-webkit-slider-thumb {
+    cursor: pointer; /* Cursor personalizado */
+    -webkit-appearance: none; /* Quita la apariencia predeterminada de WebKit */
+    appearance: none; /* Quita la apariencia predeterminada */
+    border-radius: 50%; /* Radio de borde */
+    background-color: white; /* Color de fondo */
+    width: 10px; /* Ancho */
+    height: 10px; /* Altura */
+}
